@@ -11,7 +11,7 @@ echo '== Setting up Dpkg options ==' &&
   pkg i -y python openssl-1.1 nodejs-lts &&
   echo '== Removing added Dpkg options ==' &&
   rm ~/../usr/etc/apt/apt.conf.d/local &&
-  echo '== Installing homebridge and homebridge-config-ui ==' &&
+  echo '== Installing homebridge v1.8 and homebridge-config-ui ==' &&
   npm install -g --unsafe-perm homebridge &&
   npm install -g --unsafe-perm homebridge-config-ui-x &&
   echo '== Creating default config ==' &&
